@@ -1,7 +1,5 @@
 package com.qa;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.Queue;
@@ -15,8 +13,6 @@ import com.google.gson.Gson;
 
 @SpringBootApplication
 public class Application {
-
-	private static final Logger log = LoggerFactory.getLogger(Application.class);
 	
 	static final String topicExchangeName = "spring-boot-exchange";
 
